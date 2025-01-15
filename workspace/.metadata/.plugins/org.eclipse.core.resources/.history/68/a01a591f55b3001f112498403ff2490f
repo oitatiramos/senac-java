@@ -1,0 +1,23 @@
+package zoo;
+
+public class Gato extends Animal {
+	
+	private double peso;
+	
+	public void setGato(double peso){
+		if(peso < 1) {
+			this.peso = peso;
+			System.out.println("o valor ...");
+		}	
+	}	
+	
+	public void emitirSom(String animal){
+        if (peso <= 3){
+            System.out.println(animal + "Miau");
+        } if (peso > 3 && peso <= 5){
+            System.out.println(animal + "Miau, Miau");
+        } if (peso > 5){
+            System.out.println(animal + "Miaaaaaaau");
+        }
+    }
+}
