@@ -50,12 +50,11 @@ public class Tarefa {
     // Método toString para facilitar a visualização
     @Override
     public String toString() {
-        return "Tarefa{" +
+        return "Tarefa [" +
                 "id=" + id +
                 ", descricao='" + descricao + '\'' +
                 ", prazo=" + prazo +
                 ", finalizada=" + finalizada +
-                '}';
+                ']';
     }
 }
-
