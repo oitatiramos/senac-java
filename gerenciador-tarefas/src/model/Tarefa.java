@@ -14,6 +14,9 @@ public class Tarefa {
         this.finalizada = finalizada;
     }
 
+    public Tarefa() {
+    }
+
     // Getters e Setters
     public int getId() {
         return id;

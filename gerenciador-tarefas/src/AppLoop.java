@@ -1,11 +1,15 @@
 public class AppLoop {
     public static void main(String[] args) {
-        // loop for
+        // Loop for
+        // Usado quando sabemos o número exato de repetições ou temos um contador com um número fixo de iterações.
+
         for (int i = 1; i <= 20; i++) {
             System.out.println("Contando " + i + "!");
         }
 
-        // while
+        // Loop while
+        // Usado quando não sabemos o número exato de repetições, mas sabemos a condição que deve ser atendida para continuar o loop.
+
         boolean acao = true;
 
         while (acao == true) {
@@ -13,7 +17,10 @@ public class AppLoop {
             acao = false;
         }
 
-        // do..while
+        // Loop do..while
+        // Usado quando queremos garantir que o código dentro do loop seja executado pelo menos uma vez,
+        // verificando a condição somente após a execução do código.
+
         do {
             System.out.println("Este é o loop do...");
         } while (acao == true);
