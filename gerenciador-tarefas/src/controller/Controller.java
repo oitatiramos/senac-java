@@ -1,21 +1,24 @@
 package controller;
 
+import model.Tarefa;
 import view.Tela;
 
 public class Controller {
+
+    Tarefa tarefa;
 
     public void verificarOpcao(int opcao){
 
         Tela tela = new Tela();
 
         if (opcao == 1) {
-            tela.exibirInclusao();
+            tarefa = tela.exibirInclusao();
         } else if (opcao == 2) {
-            tela.exibirAlteracao();
+            tela.exibirTarefa(tarefa);
         } else if (opcao == 3) {
-            tela.exibirInclusao();
+            tarefa = tela.exibirAlteracao(tarefa);
         } else if (opcao == 4) {
-            tela.exibirExclusao();
+            tarefa = tela.exibirExclusao(tarefa);
         } else if (opcao == 0){
             System.out.println("Aplicação encerrada!");
         } else {
