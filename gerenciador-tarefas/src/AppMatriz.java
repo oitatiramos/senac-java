@@ -17,7 +17,7 @@ public class AppMatriz {
         nomes.add("Pedro");
         nomes.add("Mauro");
 
-        for (String n : nomes) {
+        for(String n : nomes) {
             System.out.println(n);
         }
     }
